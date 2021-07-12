@@ -35,7 +35,7 @@ try:
     e = search_main.find_element_by_class_name('fromBox')
     e = e.find_element_by_class_name('typeahead')
     from_button = e.find_element_by_tag_name('input')
-    from_button.send_keys('חיפה - בת גלים')
+    from_button.send_keys(TO_STATION)
     from_button.send_keys(Keys.RETURN)
 
 
@@ -43,7 +43,7 @@ try:
     e = search_main.find_element_by_class_name('toBox')
     e = e.find_element_by_class_name('typeahead')
     to_button = e.find_element_by_tag_name('input')
-    to_button.send_keys('תל אביב - אוניברסיטה')
+    to_button.send_keys(FROM_STATION)
     to_button.send_keys(Keys.RETURN)
 
 
